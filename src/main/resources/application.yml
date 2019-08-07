@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/blog?useSSL=true&serverTimezone=UTC&characterEncoding=utf-8
+    username: root
+    password: moon2003
+  jpa:
+    show-sql: false
+    hibernate:
+      ddl-auto: update
+  thymeleaf:
+    encoding: UTF-8 # THYMELEAF
+    cache: false    # 热部署静态文件
+#    mode: HTML5     # 使用HTML5标准
+    #  security:
+      #    filter:
+  #     dispatcher-types: ASYNC, FORWARD, INCLUDE, REQUEST, ERROR
+  data:
+    elasticsearch:
+      cluster-nodes: 192.168.0.102:9200
